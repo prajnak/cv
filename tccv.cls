@@ -85,7 +85,7 @@
     \newdimen\raising%
     \raising=\dimexpr-0.7\baselineskip\relax%
     \vskip\raising\hrule height 0.4pt\vskip-\raising}
-%\makeatother
+\makeatother
 
 % Allow conditionals based on the job name. This can usually be set
 % from a command-line argument: check fausto.en.tex for an example.
@@ -152,7 +152,7 @@
 	\textsc{##2} & \textsc{##3} \\
 	\ifstrempty{##1}{}{& \textsc{##1} \\}
 	& {##4}\medskip\\}
-    \tabularx{\linewidth}{rX}}
+    \tabularx{\linewidth}{lX rX}}
     {\endtabularx}
 
 % Use only \item inside this environment: no other macros
@@ -165,8 +165,8 @@
     \newdimen\unbaseline
     \unbaseline=\dimexpr-\baselinestretch\baselineskip\relax
     \renewcommand\item[2]{%
-	\textsc{##1} & {\raggedright ##2\medskip\\}\\[\unbaseline]}
-    \tabularx{\linewidth}{rX}}
+	{{##1}} & ##2\medskip\\ \\[\unbaseline]}
+    \tabularx{\linewidth}{lX rX}}
     {\endtabularx}
 %%
 %% End of file `tccv.cls'.
