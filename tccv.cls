@@ -27,7 +27,7 @@
               [2012/11/09 v1.0
  Two Column Curriculum Vitae]
 
-\LoadClass[8pt]{scrartcl}
+\LoadClass[9pt]{scrartcl}
 
 \setcounter{secnumdepth}{-1}
 \RequirePackage[hmargin=1.25cm,vmargin=1.25cm,twocolumn,columnsep=1.25cm]{geometry}
@@ -71,7 +71,7 @@
     \twocolumn[%
     \begin{center}
 	\vskip-\lastskip%
-	{\usekomafont{part}\sc #1} \medskip\\
+	{\usekomafont{part}\textsc{#1}} \medskip\\
 %	{\fontfamily{pzc}\selectfont\Huge Curriculum vitae}
 %	\bigskip
     \end{center}]}
@@ -85,7 +85,7 @@
     \newdimen\raising%
     \raising=\dimexpr-0.7\baselineskip\relax%
     \vskip\raising\hrule height 0.4pt\vskip-\raising}
-\makeatother
+%\makeatother
 
 % Allow conditionals based on the job name. This can usually be set
 % from a command-line argument: check fausto.en.tex for an example.
@@ -128,27 +128,32 @@
 \newenvironment{eventlist}{%
     \newcommand*\inskip{}
     \renewcommand\item[3]{%
-	\inskip%
-	{\raggedleft\sc ##1}{\justify\sc ##2}
-	{\large\sc ##3}
+      \inskip%
+	{\textsc{##1} || }
+	\ifstrempty{##2}{}{##2\\}
+	{\Large\textsc{##3}}
 	\medskip
 	\renewcommand\inskip{\bigskip}}}
-    {\bigskip}
+    %{\bigskip}
+               
 
-% Use only \item inside this environment: no other macros
+
+
+% Use only \item inside this environment, no other macros
 % are allowed:
 %
-% |[
-% \item[optional: what has been achieved]{years}{subject}{notes}
-% ]|
+%     \item
+%         [what has been achieved]
+%         {years}
+%         {subject}
+%         {notes}
 \newenvironment{yearlist}{%
     \renewcommand\item[4][]{%
-	{\sc ##2} & {\bfseries ##3} \\
-	\ifstrempty{##1}{}{& {\sc ##1} \\}
+	\textsc{##2} & \textsc{##3} \\
+	\ifstrempty{##1}{}{& \textsc{##1} \\}
 	& {##4}\medskip\\}
     \tabularx{\linewidth}{rX}}
     {\endtabularx}
-
 
 % Use only \item inside this environment: no other macros
 % are allowed:
