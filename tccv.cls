@@ -106,13 +106,14 @@
 %          {address}{phone number}{email}
 % ]|
 \newcommand\personal[4][]{%
-    \needspace{0.5\textheight}%
+    \needspace{0.2\textheight}%
     \newdimen\boxwidth%
     \boxwidth=\dimexpr\linewidth-2\fboxsep\relax%
     \colorbox[HTML]{F5DD9D}{%
     \begin{tabularx}{\boxwidth}{c|X}
     \Writinghand & {#2}\smallskip\\
     \Telefon     & {#3}\smallskip\\
+    \Info & References available upon request\\
     \Letter      & \href{mailto:#4}{#4}
     \ifstrempty{#1}{}{\smallskip\\ \Lightning & \href{https://#1}{https://#1}}
     \end{tabularx}}}
@@ -131,7 +132,7 @@
       \inskip%
 	{\textsc{##1} || }
 	\ifstrempty{##2}{}{##2\\}
-	{\Large\textsc{##3}}
+	{\Large\textbf{##3}}
 	\medskip
 	\renewcommand\inskip{\bigskip}}}
     %{\bigskip}
@@ -149,8 +150,8 @@
 %         {notes}
 \newenvironment{yearlist}{%
     \renewcommand\item[4][]{%
-	\textsc{##2} & \textsc{##3} \\
-	\ifstrempty{##1}{}{& \textsc{##1} \\}
+	\textbf{##2} & \textbf{##3} \\
+	\ifstrempty{##1}{}{& \textbf{##1} \\}
 	& {##4}\medskip\\}
     \tabularx{\linewidth}{lX rX}}
     {\endtabularx}
