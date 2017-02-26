@@ -1,4 +1,4 @@
-TARGET=resume
+TARGET=cv
 
 all: $(TARGET).pdf
 
