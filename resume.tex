@@ -1,0 +1,222 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Prajna}{Kandarpa}{%
+    \urlstyle{same}\href{https://prajis.me}{prajis.me}
+  | \href{mailto:spspkand@uwaterloo.ca}{spspkand@uwaterloo.ca}
+  | +91 85000 06699%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     BLURB
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{About}
+Mechatronics (Robotics) Engineer with expertise in big data, machine learning
+and full stack web development. I want to show the effectiveness of data science
+in improving process efficiency and catching engineering failures to
+non-technical audiences
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{Univ. Of Waterloo}
+\descript{Bachelor of Applied Science in Mechatronics Engineering}
+\location{May 2016 | Waterloo, Canada \\ Cum. Avg: 71.28}
+Internships: 7 | Experience: 3 years \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+\location{Extensive:}
+JavaScript \textbullet{} R \textbullet{} Python \textbullet{} HTML/CSS \\
+MATLAB \textbullet{} Bash\\
+\location{Comfortable:}
+Go \textbullet{} Spark \textbullet{} Hadoop \textbullet{} C \textbullet{} Objective-C \\
+Java \textbullet{} Typescript\\
+\sectionsep
+
+\subsection{Technologies}
+\location{Extensive:}
+Node.js \textbullet{} AngularJS \textbullet{} Git \textbullet{} Unix \\
+Emacs \textbullet{} docker \textbullet{} Amazon Web Services\\
+LaTeX \textbullet{} PostgreSQL \textbullet{} MySQL
+\location{Comfortable:}
+Django \textbullet{} Flask \textbullet{} XCode \textbullet{} DevOps
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+GitHub: \href{https://github.com/prajnak}{\custombold{prajnak}} \\
+Website:  \href{https://prajis.me}{\custombold{prajis.me}} \\
+Blog:  \href{https://prajis.me/blog}{\custombold{prajis.me/blog}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+(MTE 262) Microprocessors and Digital\\
+(MTE 241) Computer Structures and Real-time systems \\
+(MTE 320) Actuators \& Power Electronics\\
+(MTE 360) Automatic Control Systems\\
+(SYDE 575) Image Processing\\
+(SYDE 372) Pattern Recognition\\
+(SYDE 522) Machine Intelligence\\
+(SYDE 552) Computational Neuroscience\\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Full Stack Engineer | Data Science}
+\descript {@ Acerta Systems Analytics}
+\location{July 2015 - Dec '15, Jun '16 - Dec '16 | Waterloo, Canada}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed and built web apps, backend services, machine learning models and data
+  processing pipelines during a 14 month stint as \custombold{Employee \#1}
+\item Worked in \custombold{Javascript, Python (scikit-learn), R(stats, dplyr), Go(fasthttp)}
+% \item Automated app, database deployments to Amazon Web Services
+\item Trained new employees in R and Python for data modelling and visualization
+\item Forward facing role included interactions with Fiat Chrysler engineers to scope
+  out and deliver solutions for their data analytics
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Research Associate | Data Science}
+\descript {@ Univ. of Waterloo}
+\location{June 2016 – Dec 2016 | Waterloo, Canada}
+\begin{tightemize}
+\item Developed techniques for unsupervised and supervised anomaly detection in
+  time series big data collected from automotive and aeronautical systems
+\item Mainly used \custombold{R, Python, Apache Spark and LaTeX}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Full Stack Engineer | Video Streaming | OS X}
+\descript{@ Ubiq, Inc.}  
+\location{March 2015 - June 2015 | Waterloo, Canada}
+\begin{tightemize}
+\item Built an OS X application for streaming wirelessly to enterprise meeting rooms 
+\item Improved streaming latency by \custombold{80\%} and worked in Objective-C, C, Cocoa
+  and Xcode
+\item Provided \custombold{customer support as well as on site product installations}
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection {Diagnostics Engineer | Hardware Testing}
+\descript{@ Arista Networks}
+\location{May 2014 - December 2014 | Santa Clara, California}
+\begin{tightemize}
+\item Created software based hardware test automation of a new gigabit ethernet switch
+\item Collaborated with Hardware, Software and Bootloader teams to ensure
+  project delivery 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Software Developer - R\&D| Agile | Scrum}
+\descript{@ Trapeze Group} 
+\location{Sep 2013 - Dec 2013 | Mississauga, Canada}
+\begin{tightemize}
+\item Built a dashboard to provide project managers insight into their code
+  repository statistics for tracking usage and feature creep 
+\item Used Java Servlets, Grails (MVC framework) and Javascript 
+\end{tightemize}
+\sectionsep
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Talon}
+\descript{Sep 2015 - March 2016 |\href{http://talonco.github.io}{talonco.github.io}} 
+\begin{tightemize}
+\item Final year team design project where we built an add-on kit for delivery
+  trucks that enables drone deliveries without massive capital requirements
+\item Responsible for Radio communications, flight controller tuning and web
+  services
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Crop Yield Prediction}
+\descript{Feb 2016 - March 2016 |
+  \href{http://github.com/prajnak/syde522_project}{project repo}}
+\begin{tightemize}
+\item Used Neural Network architectures to predict crop yields in India from a
+  dataset containing meteorological and geographical features
+\item Data was cleaned, modelled and visualized using \custombold{R(dplyr, caret, ggplot2), LaTeX}
+\end{tightemize}
+\sectionsep
+
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
