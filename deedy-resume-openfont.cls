@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.25cm, vmargin=0.7cm]{geometry}
+\usepackage[hmargin=1cm, vmargin=0.7cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{hyperref}
 \usepackage{titlesec}
@@ -44,7 +44,7 @@ Last Updated on
 \newcommand{\namesection}[3]{
 	\centering{
 		\sffamily
-		\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{40pt}{10cm}\selectfont #1 
+		\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{32pt}{10cm}\selectfont #1 
 		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 	} \\
 	\vspace{5pt}
